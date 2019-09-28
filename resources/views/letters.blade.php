@@ -11,5 +11,8 @@
 @endforeach
 
 @endsection -->
-<?php @include ('number.blade.php')
- ?>
+<?php
+
+  @include ('number.blade.php')
+
+?>
