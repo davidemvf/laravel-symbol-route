@@ -22,11 +22,11 @@ class MyController extends Controller
       $type = "Lettere dell'alfabeto";
       $color = 'red';
 
-      $contentArr = [];
+      $contentArr = range('a', 'z');
 
-      foreach (range('a', 'z') as $lettera) {
-        $contentArr[] = $lettera;
-      }
+      // foreach (range('a', 'z') as $lettera) {
+      //   $contentArr[] = $lettera;
+      // }
 
       return view('letters', compact('type', 'color', 'contentArr'));
     }
